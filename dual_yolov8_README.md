@@ -91,7 +91,7 @@ When opened from the GitHub Colab badge, the notebook clones or updates this
 repository into:
 
 ```text
-/content/YOLO_OPTIM
+/content/Yolo_Fine_tuning
 ```
 
 Runtime assets are not committed to git. Put them in Google Drive so the setup
@@ -104,8 +104,8 @@ cell can copy them into the cloned repo:
   calibration/labeled/top
 ```
 
-The setup cell also checks `/content/drive/MyDrive/YOLO_OPTIM`,
-`/content/drive/MyDrive/YOLO_OPTIM_assets`, and
+The setup cell also checks `/content/drive/MyDrive/Yolo_Fine_tuning`,
+`/content/drive/MyDrive/Yolo_Fine_tuning_assets`, and
 `/content/drive/MyDrive/YOLO_optim_assets`. You can override this with:
 
 ```python
@@ -122,9 +122,9 @@ Set the Colab runtime to GPU, then run cells in order. The notebook now auto-det
 
 ```text
 /content/drive/MyDrive/YOLO_optim
-/content/drive/MyDrive/YOLO_OPTIM
+/content/drive/MyDrive/Yolo_Fine_tuning
 /content/YOLO_optim
-/content/YOLO_OPTIM
+/content/Yolo_Fine_tuning
 ```
 
 If your folder is somewhere else, set this before the project setup cell:

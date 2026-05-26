@@ -1,6 +1,6 @@
 # YOLO Optim
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jje-seok/YOLO_OPTIM/blob/main/notebooks/deepx_dual_yolov8_finetune_colab.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jje-seok/Yolo_Fine_tuning/blob/main/notebooks/deepx_dual_yolov8_finetune_colab.ipynb)
 
 Dual-camera YOLOv8n fine-tuning project for a DEEPX deployment flow.
 
@@ -26,7 +26,7 @@ When opened from GitHub/Colab, the notebook automatically clones or updates this
 repository into:
 
 ```text
-/content/YOLO_OPTIM
+/content/Yolo_Fine_tuning
 ```
 
 The notebook also needs these runtime assets, which are intentionally not stored
@@ -42,8 +42,8 @@ Put them in one of these Google Drive folders before running the setup cell:
 
 ```text
 /content/drive/MyDrive/YOLO_optim
-/content/drive/MyDrive/YOLO_OPTIM
-/content/drive/MyDrive/YOLO_OPTIM_assets
+/content/drive/MyDrive/Yolo_Fine_tuning
+/content/drive/MyDrive/Yolo_Fine_tuning_assets
 /content/drive/MyDrive/YOLO_optim_assets
 ```
 
