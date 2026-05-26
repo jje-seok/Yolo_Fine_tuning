@@ -22,13 +22,33 @@ notebooks/deepx_dual_yolov8_finetune_colab.ipynb
 
 or use the Colab badge at the top of this README.
 
-The notebook expects these runtime/local files to be available in your project folder:
+When opened from GitHub/Colab, the notebook automatically clones or updates this
+repository into:
+
+```text
+/content/YOLO_OPTIM
+```
+
+The notebook also needs these runtime assets, which are intentionally not stored
+in git:
 
 ```text
 YOLOV8N.onnx
 calibration/labeled/front
 calibration/labeled/top
 ```
+
+Put them in one of these Google Drive folders before running the setup cell:
+
+```text
+/content/drive/MyDrive/YOLO_optim
+/content/drive/MyDrive/YOLO_OPTIM
+/content/drive/MyDrive/YOLO_OPTIM_assets
+/content/drive/MyDrive/YOLO_optim_assets
+```
+
+or set `YOLO_OPTIM_ASSET_ROOT` to the folder that contains `YOLOV8N.onnx` and
+`calibration/labeled`.
 
 Large datasets, checkpoints, ONNX files, DXNN files, calibration images, and DEEPX manuals are intentionally excluded from git.
 

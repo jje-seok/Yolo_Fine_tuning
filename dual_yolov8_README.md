@@ -87,13 +87,29 @@ docs/dual_yolov8_architecture.md
 
 ## Colab Flow
 
-Upload or mount the whole project folder so that these paths exist together:
+When opened from the GitHub Colab badge, the notebook clones or updates this
+repository into:
 
 ```text
-YOLO_optim/
+/content/YOLO_OPTIM
+```
+
+Runtime assets are not committed to git. Put them in Google Drive so the setup
+cell can copy them into the cloned repo:
+
+```text
+/content/drive/MyDrive/YOLO_optim/
   YOLOV8N.onnx
-  dual_yolov8/
-  notebooks/
+  calibration/labeled/front
+  calibration/labeled/top
+```
+
+The setup cell also checks `/content/drive/MyDrive/YOLO_OPTIM`,
+`/content/drive/MyDrive/YOLO_OPTIM_assets`, and
+`/content/drive/MyDrive/YOLO_optim_assets`. You can override this with:
+
+```python
+%env YOLO_OPTIM_ASSET_ROOT=/content/drive/MyDrive/your_asset_folder
 ```
 
 Open:
