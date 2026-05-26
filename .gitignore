@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local datasets and site-specific calibration data
+datasets/
+calibration/
+
+# Training/export artifacts
+runs/
+*.pt
+*.pth
+*.onnx
+*.dxnn
+*.npz
+*.zip
+
+# Local vendor/manual files
+DEEPX_doc/
+*.pdf
+
+# Environment/editor files
+.env
+.venv/
+venv/
+.vscode/
+.idea/
