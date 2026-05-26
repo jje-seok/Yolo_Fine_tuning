@@ -29,8 +29,8 @@ repository into:
 /content/Yolo_Fine_tuning
 ```
 
-The notebook also needs these runtime assets, which are intentionally not stored
-in git:
+The repository includes these runtime assets so the notebook can train right
+after cloning:
 
 ```text
 YOLOV8N.onnx
@@ -38,7 +38,8 @@ calibration/labeled/front
 calibration/labeled/top
 ```
 
-Put them in one of these Google Drive folders before running the setup cell:
+If you want to replace those assets with your own local files, put them in one
+of these Google Drive folders before running the setup cell:
 
 ```text
 /content/drive/MyDrive/YOLO_optim
@@ -50,7 +51,7 @@ Put them in one of these Google Drive folders before running the setup cell:
 or set `YOLO_OPTIM_ASSET_ROOT` to the folder that contains `YOLOV8N.onnx` and
 `calibration/labeled`.
 
-Large datasets, checkpoints, ONNX files, DXNN files, calibration images, and DEEPX manuals are intentionally excluded from git.
+Raw datasets, checkpoints, DXNN files, training outputs, and DEEPX manuals are intentionally excluded from git.
 
 ## Main Commands
 

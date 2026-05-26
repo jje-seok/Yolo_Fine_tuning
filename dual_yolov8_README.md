@@ -94,8 +94,16 @@ repository into:
 /content/Yolo_Fine_tuning
 ```
 
-Runtime assets are not committed to git. Put them in Google Drive so the setup
-cell can copy them into the cloned repo:
+The repository includes the default runtime assets:
+
+```text
+YOLOV8N.onnx
+calibration/labeled/front
+calibration/labeled/top
+```
+
+If you want to override them, put replacement assets in Google Drive so the
+setup cell can copy them into the cloned repo:
 
 ```text
 /content/drive/MyDrive/YOLO_optim/
