@@ -157,21 +157,21 @@ The notebook:
 10. Exports DEEPX-friendly split ONNX files with opset 17.
 11. Runs sequential ONNXRuntime smoke test for `shared_backbone -> front_head/top_head`.
 
-The top-view Roboflow API key is read from Colab Secrets or the environment variable `ROBOFLOW_TOP_API_KEY`.
+Roboflow API keys are read from Colab Secrets or environment variables.
 
-In Colab, either add a secret named:
+In Colab, add these secrets:
 
 ```text
+ROBOFLOW_FRONT_API_KEY
 ROBOFLOW_TOP_API_KEY
 ```
 
 or run this before the dataset download cell:
 
 ```python
-%env ROBOFLOW_TOP_API_KEY=your_key_here
+%env ROBOFLOW_FRONT_API_KEY=your_front_key_here
+%env ROBOFLOW_TOP_API_KEY=your_top_key_here
 ```
-
-The front-view dataset uses the `unauthorized` key value shown in the original Roboflow snippet.
 
 To limit fine-tuning image count in Colab, edit this notebook cell:
 
