@@ -4,13 +4,16 @@ __pycache__/
 
 # Local datasets and site-specific calibration data
 datasets/
-calibration/
+calibration/*
+!calibration/labeled/
+!calibration/labeled/**
 
 # Training/export artifacts
 runs/
 *.pt
 *.pth
 *.onnx
+!YOLOV8N.onnx
 *.dxnn
 *.npz
 *.zip
